@@ -86,9 +86,7 @@
                             <img src="images/stempel.jpg" alt="Stempel">
                         </a>
                     </div>
-                    <div class="product-info">
-                        <span>Stempel Flash</span>
-                    </div>
+                    <div class="product-info"><span>Stempel Flash</span></div>
                 </div>
                 <div class="product-card">
                     <div class="img-container">
@@ -96,9 +94,7 @@
                             <img src="images/stempel-logo.jpg" alt="Stempel Logo">
                         </a>
                     </div>
-                    <div class="product-info">
-                        <span>Nota & Stiker</span>
-                    </div>
+                    <div class="product-info"><span>Nota & Stiker</span></div>
                 </div>
                 <div class="product-card">
                     <div class="img-container">
@@ -106,9 +102,7 @@
                             <img src="images/kartu-nama.jpg" alt="Kartu Nama">
                         </a>
                     </div>
-                    <div class="product-info">
-                        <span>ID Card & Kartu Nama</span>
-                    </div>
+                    <div class="product-info"><span>ID Card & Kartu Nama</span></div>
                 </div>
                 <div class="product-card">
                     <div class="img-container">
@@ -116,15 +110,36 @@
                             <img src="images/banner.jpg" alt="Banner">
                         </a>
                     </div>
-                    <div class="product-info">
-                        <span>MMT & X-Banner</span>
-                    </div>
+                    <div class="product-info"><span>MMT & X-Banner</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="kontak">
+    <section class="section" id="artikel">
+        <div class="container">
+            <div class="section-header">
+                <h2>Artikel & Panduan</h2>
+                <p>Tips dan informasi seputar dunia percetakan dan stempel.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-file-lines"></i></div>
+                    <h3>Cara Duplikat Stempel</h3>
+                    <p>Panduan lengkap jika ingin membuat ulang atau membuat stempel baru yang presisi.</p>
+                    <a href="artikel/duplikat-stempel.html" class="link-artikel" style="color: var(--primary); font-weight: 700; text-decoration: none; display: inline-block; margin-top: 15px;">Baca Selengkapnya →</a>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Tips Merawat Stempel</h3>
+                    <p>Cara merawat stempel warna agar tinta awet dan hasil cap tetap tajam maksimal.</p>
+                    <a href="artikel/tips-merawat.html" class="link-artikel" style="color: var(--primary); font-weight: 700; text-decoration: none; display: inline-block; margin-top: 15px;">Baca Selengkapnya →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light" id="kontak">
         <div class="container">
             <div class="contact-card">
                 <div class="contact-info">
@@ -147,7 +162,7 @@
                     <a href="https://wa.me/6289670910156" class="btn btn-primary">Chat Via WhatsApp</a>
                 </div>
                 <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.8546599298493!2d110.3957813!3d-7.1428387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDgnMzQuMiJTIDExMMKwMjMnNDQuOCJF!5e0!3m2!1sid!2sid!4v1700000000000" width="100%" height="350" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.847119565787!2d110.3956461!3d-7.1436441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70876296b546e5%3A0xc392e228399e525a!2sONESTAMP%20Reborn!5e0!3m2!1sid!2sid!4v1700000000000" width="100%" height="350" style="border:0; border-radius: 0 15px 15px 0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -156,7 +171,7 @@
     <footer>
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2025 <strong>ONESTAMP Reborn</strong>. Dibuat dengan Bangga di Ungaran.</p>
+                <p>© 2025 <strong>ONESTAMP Reborn</strong>. Dibuat dengan Bangga di Ungaran.</p>
             </div>
         </div>
     </footer>
@@ -171,7 +186,8 @@
                 e.preventDefault();
                 const overlay = document.createElement('div');
                 overlay.className = 'lightbox-overlay';
-                overlay.innerHTML = `<div class="lightbox-content"><img src="${this.href}"><span class="close-ln">&times;</span></div>`;
+                overlay.style.cssText = "position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:9999; display:flex; align-items:center; justify-content:center; cursor:pointer;";
+                overlay.innerHTML = `<div class="lightbox-content"><img src="${this.href}" style="max-width:90%; max-height:80vh; border-radius:10px; box-shadow:0 0 20px rgba(0,0,0,0.5);"></div>`;
                 document.body.appendChild(overlay);
                 overlay.addEventListener('click', () => overlay.remove());
             });
