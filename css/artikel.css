@@ -1,0 +1,71 @@
+/* =========================
+   ARTICLE SIDE-BY-SIDE
+========================= */
+.article-side {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.article-side .article-img {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+.article-side .article-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.article-side .article-content {
+  flex: 2 1 400px;
+}
+
+/* Tombol artikel & share */
+.order .btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.order .btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+.article-actions .btn,
+.share-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 18px;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.article-actions .btn:hover,
+.share-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Responsif untuk artikel */
+@media(max-width:768px) {
+  .article-side { flex-direction: column; }
+  .article-side .article-img,
+  .article-side .article-content { flex: 1 1 100%; max-width: 100%; }
+  .order .btn,
+  .article-actions .btn,
+  .share-btn { width: 100%; padding: 14px 0; font-size: 16px; }
+}
