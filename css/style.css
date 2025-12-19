@@ -341,3 +341,54 @@ header {
   font-size: 13px;
   color: #94a3b8;
 }
+
+/* FOOTER LOCAL SEO CTA */
+.footer-local-cta {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
+  padding: 60px 0;
+  margin-bottom: 60px;
+  border-radius: 30px;
+}
+
+.footer-local-cta h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.footer-local-cta p {
+  font-size: 1rem;
+  color: #e0e7ff;
+  max-width: 700px;
+  margin-bottom: 25px;
+}
+
+.btn-footer-cta {
+  display: inline-block;
+  background: #ffffff;
+  color: var(--primary);
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-footer-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-local-cta {
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .footer-local-cta h3 {
+    font-size: 1.6rem;
+  }
+}
+
