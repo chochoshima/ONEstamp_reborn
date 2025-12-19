@@ -31,13 +31,15 @@ body {
 
 /* HEADER & NAV */
 header {
+    min-height: 80px;
     padding: 1.5rem 0;
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
     z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 .nav {
@@ -81,9 +83,16 @@ header {
     border-radius: 50px;
 }
 
+@media (max-width: 768px) {
+    .menu {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
 /* HERO SECTION */
 .hero {
-    padding: 100px 0;
+    padding: 120px 0 100px;
     background: radial-gradient(circle at top right, #e0e7ff, transparent);
 }
 
@@ -378,6 +387,26 @@ header {
 .btn-footer-cta:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* FOOTER LOCAL CTA HOVER SOFT */
+.footer-local-cta {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.footer-local-cta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(37, 99, 235, 0.35);
+}
+
+/* Button hover lebih hidup */
+.btn-footer-cta {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-footer-cta:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 
 /* RESPONSIVE */
