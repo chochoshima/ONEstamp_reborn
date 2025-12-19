@@ -61,6 +61,7 @@ header {
 .logo img {
   height: 48px;
   width: auto;
+}
 
 .menu {
     display: flex;
