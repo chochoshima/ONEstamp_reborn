@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /data/
+Disallow: /js/
+Disallow: /images/temp/
+
+Sitemap: https://onestampreborn.pages.dev/sitemap.xml
