@@ -5,4 +5,8 @@ Disallow: /data/
 Disallow: /js/
 Disallow: /images/temp/
 
+<<<<<<< HEAD
 Sitemap: https://stempelungaran.my.id/sitemap.xml
+=======
+Sitemap: https://onestampreborn.pages.dev/sitemap.xml
+>>>>>>> bcef22721472a51944506968ea25588af9cffdff
