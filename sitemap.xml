@@ -14,9 +14,15 @@
 </url>
 
 <url>
-<loc>https://stempelungaran.my.id/jasa-stempel-ungaran.html</loc>
+<loc>https://stempelungaran.my.id/stempel-warna-ungaran.html</loc>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://stempelungaran.my.id/kontak.html</loc>
+<changefreq>yearly</changefreq>
+<priority>0.7</priority>
 </url>
 
 </urlset>
