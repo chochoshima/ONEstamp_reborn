@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<<<<<<< HEAD
 
 <url>
 <loc>https://stempelungaran.my.id/</loc>
@@ -19,22 +18,11 @@
 </url>
 
 <url>
+<loc>https://stempelungaran.my.id/jasa-cetak-ungaran.html</loc>
+</url>
+
+<url>
 <loc>https://stempelungaran.my.id/kontak-stempel-ungaran.html</loc>
 </url>
 
 </urlset>
-=======
-  <url>
-    <loc>https://stempelungaran.my.id/</loc>
-  </url>
-  <url>
-    <loc>https://stempelungaran.my.id/stempel.html</loc>
-  </url>
-  <url>
-    <loc>https://stempelungaran.my.id/stempel-warna-ungaran.html</loc>
-  </url>
-  <url>
-    <loc>https://stempelungaran.my.id/kontak.html</loc>
-  </url>
-</urlset>
->>>>>>> 1565aeaeb154f69dbc110bb831908d270ff26b27
