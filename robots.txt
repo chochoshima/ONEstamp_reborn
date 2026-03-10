@@ -1,12 +1,8 @@
 User-agent: *
 Allow: /
 
-<<<<<<< HEAD
 Disallow: /data/
 Disallow: /js/
 Disallow: /images/temp/
 
 Sitemap: https://stempelungaran.my.id/sitemap.xml
-=======
-Sitemap: https://stempelungaran.my.id/sitemap.xml
->>>>>>> 1565aeaeb154f69dbc110bb831908d270ff26b27
