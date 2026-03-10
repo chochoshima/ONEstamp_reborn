@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-Disallow: /data/
-Disallow: /js/
-Disallow: /images/temp/
-
 Sitemap: https://stempelungaran.my.id/sitemap.xml
-Host: stempelungaran.my.id
