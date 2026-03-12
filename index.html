@@ -41,6 +41,8 @@
 <link rel="alternate" hreflang="id" href="https://stempelungaran.my.id/">
 <link rel="preconnect" href="https://stempelungaran.my.id">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#c40000">
 
 
 </head>
@@ -297,6 +299,13 @@ target="_blank"
 rel="noopener">
 <i class="fab fa-whatsapp"></i>
 </a>
-
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(function() {
+      console.log('Service Worker aktif');
+    });
+}
+</script>
 </body>
 </html>
