@@ -468,3 +468,33 @@ box-shadow:0 0 0 20px rgba(37,211,102,0);
 box-shadow:0 0 0 0 rgba(37,211,102,0);
 }
 }
+
+footer{
+background:#111;
+color:#fff;
+text-align:center;
+padding:30px 20px;
+font-size:14px;
+}
+
+footer a{
+color:#fff;
+text-decoration:none;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
+
+.footer-menu{
+margin-top:15px;
+}
+
+.footer-contact{
+margin-top:10px;
+}
+
+.grid img{
+width:100%;
+height:auto;
+}
